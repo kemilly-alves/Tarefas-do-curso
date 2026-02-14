@@ -1,0 +1,312 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 1180vh;
+}
+
+.container{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+    /* Ativando o flexbox no container!  */
+    display: flex; /* Quando usamos ele sozinho, ele vem por padrão com o flex-direction: row; ou seja, precisamos alterar para flex-direction: column; para que fique como desejado. */
+    flex-direction: column-reverse; /* Ele coloca os itens em linhas, ou seja, um do lado do outro */
+     /* Para colocar os itens um embaixo do outro, ou seja, em colunas, basta usar o flex-direction: column; */
+     /* Para colocar os itens um do lado do outro, ou seja, em linhas, basta usar o flex-direction: row; */
+    /* Para inverter a ordem das caixas e alinhar para o outro lado basta usar o flex-direction: row-reverse; ou o flex-direction:column-reverse;*/
+    /* Para centralizar os itens, basta usar o justify-content: center; */
+
+}
+
+.area{
+    width: 100px;
+    height: 100px;
+}
+
+.item-1{
+    background-color: red;
+}
+
+.item-2{
+    background-color: blue;
+}
+
+.item-3{
+    background-color: darkgreen;
+}
+
+
+
+.container2{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+    /* Ativando o flexbox no container!  */
+    display: flex; 
+    flex-direction: row; 
+}
+
+
+.area2{
+    width: 100px;
+    height: 100px;
+}
+
+.item-4{
+    background-color: red;
+    flex: 1; /* O flex: 1; é uma forma abreviada de escrever flex-grow: 1; flex-shrink: 1; flex-basis: 0%; ou seja, ele faz com que o item ocupe todo o espaço disponível dentro do container, dividindo-o igualmente entre os itens. */
+}
+
+.item-5{
+    background-color: blue;
+    flex: 2;
+}
+
+.item-6{
+    background-color: darkgreen;
+    flex: 1;
+}
+
+
+.container3{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+    /* Ativando o flexbox no container!  */
+    display: flex; 
+    flex-direction: row; 
+}
+
+
+.area3{
+    width: 100px;
+    height: 100px;
+
+    flex-basis: 400px; /* O flex-basis: 400px; é uma forma de definir a largura inicial do item, ou seja, ele define a largura do item antes de aplicar o flex-grow e o flex-shrink. */
+    flex-shrink: 1;  
+    /* O flex: 1; é uma forma abreviada de escrever flex-grow: 1; flex-shrink: 1; flex-basis: 0%; ou seja, ele faz com que o item ocupe todo o espaço disponível dentro do container, dividindo-o igualmente entre os itens.
+    Ao usar o flex-grow: 1; o item vai crescer para ocupar todo o espaço disponível dentro do container, dividindo-o igualmente entre os itens. ou seja, ele vai crescer para ocupar todo o espaço disponível dentro do container, dividindo-o igualmente entre os itens. 
+    Ao usar o flex-shrink: 1; define o quanto o item pode encolher em relação aos outros itens. ele não e muito utilizado porem devemos saber para que ele*/
+}
+
+.item-7{
+    background-color: red;
+    flex-shrink: 1;
+}
+
+.item-8{
+    background-color: blue;
+    flex-shrink: 1;
+}
+
+.item-9{
+    background-color: darkgreen;
+
+    /*Esse elemento vai reduzir duas vezes mais que os elementos item-7 e item-8, ou seja, ele vai encolher mais que os outros elementos. */
+    flex-shrink: 2;
+}
+
+
+
+.container4{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+    /* Ativando o flexbox no container!  */
+    display: flex; 
+    flex-direction: row; 
+}
+
+
+.area4{
+    width: 100px;
+    height: 100px;
+    font-size: 25px;    
+}
+
+.item-10{
+    background-color: red;
+    order: 3; /* O order: 3; é uma forma de definir a ordem dos itens dentro do container, ou seja, ele define a posição do item em relação aos outros itens. O item com o menor valor de order vai aparecer primeiro, ou seja, ele vai aparecer antes dos itens com valores maiores de order. */
+}
+
+.item-11{
+    background-color: blue;
+    order: 2;
+}
+
+.item-12{
+    background-color: darkgreen;
+    order: 1;
+}
+
+
+
+
+
+.container5{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+    /* Ativando o flexbox no container!  */
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    /* > justify-content: space-between; é uma forma de distribuir os itens dentro do container, ou seja, ele distribui os itens de forma que haja um espaço igual entre eles, ou seja, ele distribui os itens de forma que haja um espaço igual entre eles, ou seja, ele distribui os itens de forma que haja um espaço igual entre eles.
+    > justify-content: center; é uma forma de centralizar os itens dentro do container, ou seja, ele centraliza os itens horizontalmente dentro do container. 
+    > justify-content: space-around; é uma forma de distribuir os itens dentro do container, ou seja, ele distribui os itens de forma que haja um espaço igual ao redor de cada item.  
+    > justify-content: flex-end; Alinha os itens no final do container */
+}
+
+
+.area5{
+    width: 100px;
+    height: 100px;
+    font-size: 25px;    
+}
+
+.item-13{
+    background-color: red;
+}
+
+.item-14{
+    background-color: blue;
+}
+
+.item-15{
+    background-color: darkgreen;
+}
+
+.item-16{
+    background-color: brown;
+}
+
+
+
+.container6{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+    /* Ativando o flexbox no container!  */
+    display: flex; 
+    flex-direction: row;
+
+    /* > align-items: flex-start; Alinha os itens no início do container, ou seja, ele alinha os itens no início do container, ou seja, ele alinha os itens no início do container.
+    > align-items: center; Alinha os itens no centro do container, ou seja, ele alinha os itens no centro do container, ou seja, ele alinha os itens no centro do container.
+    > align-items: flex-end; Alinha os itens no final do container, ou seja, ele alinha os itens no final do container, ou seja, ele alinha os itens no final do container. */
+    align-items: flex-start;
+    justify-content: center;
+    /* Se colocarmos o align-items: center; e o justify-content: center; os itens vão ficar centralizados tanto horizontalmente quanto verticalmente dentro do container. */
+}
+
+
+.area6{
+    width: 100px;
+    height: 100px;
+    font-size: 25px;    
+}
+
+.item-17{
+    background-color: red;
+}
+
+.item-18{
+    background-color: blue;
+}
+
+.item-19{
+    background-color: darkgreen;
+}
+
+.item-20{
+    background-color: brown;
+}
+
+
+
+
+
+.container7{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+
+    display: flex; 
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.area7{
+    width: 100px;
+    height: 100px;
+    font-size: 25px;    
+}
+
+.item-21{
+    background-color: red;
+    align-self: flex-end;
+}
+
+.item-22{
+    background-color: blue;
+    align-self: flex-start;
+}
+
+.item-23{
+    background-color: darkgreen;
+}
+
+.item-24{
+    background-color: brown;
+    align-self: flex-end;
+}
+
+
+
+
+.container8{
+    background-color: #121212;
+    height: 500px;
+    margin: 50px;
+
+
+    display: flex; 
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+.area8{
+    width: 100px;
+    height: 100px;
+    font-size: 25px;    
+}
+
+.item-25{
+    background-color: red;
+    align-self: flex-end;
+}
+
+.item-26{
+    background-color: blue;
+    align-self: flex-start;
+}
+
+.item-27{
+    background-color: darkgreen;
+}
+
+.item-28{
+    background-color: brown;
+    align-self: flex-end;
+}
