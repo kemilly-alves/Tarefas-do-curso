@@ -34,5 +34,51 @@ body{
 
 .nav-list a:hover{
     color: #FFFFFF;
-
 }
+/* FIM HEADER */
+
+/* INICIO MAIN */
+
+.main{
+    width: 100%;
+    background-color: #000;
+    height: calc(100vh - 80px); /* Dessa forma vamos subtrair a altura do header da altura total da tela, para o main ocupar o restante da tela, sem ativar o scroll. */
+    background-image: url("../images/programador.png");
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.main h1{
+    color: #FFFFFF;
+    font-size: 54px;
+}
+
+.main p{
+    font-size: 24px;
+    font-style: italic;
+    color: #1e96FC;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.call-to-action{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: 0;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.9s; /* A propriedade transition é usada para criar uma transição suave entre os estados normal e hover do botão. No caso, estamos definindo uma transição de 0.9 segundos para todas as propriedades do botão. */
+}
+
+.call-to-action:hover{
+    transform: scale(1.1); /* Com o transform: scale() podemos aumentar ou diminuir o tamanho de um elemento. No caso, estamos aumentando o tamanho do botão em 10% quando o mouse passar por cima dele. */
+}
+
+.main a{
+    text-decoration: none;
+    color: #181818;
+}
+/* FIM MAIN */
