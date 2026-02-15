@@ -17,6 +17,9 @@ body{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 .nav-list{
@@ -83,7 +86,7 @@ body{
 }
 /* FIM MAIN */
 
-/* INICIO SOBRE*/
+/* INICIO SOBRE/ABOUT*/
 .about{
     background-color: #FFFFFF;
     width: 100%;
@@ -112,4 +115,5 @@ body{
     margin-bottom: 14px;
 }
 
-/* FIM SOBRE */
+/* FIM SOBRE/ABOUT */
+
