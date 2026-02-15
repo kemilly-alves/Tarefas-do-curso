@@ -10,6 +10,7 @@ body{
     height: 180vh;
 }
 
+
 /* INICIO HEADER */
 .nav{
     background-color: #181818;
@@ -39,6 +40,7 @@ body{
     color: #FFFFFF;
 }
 /* FIM HEADER */
+
 
 /* INICIO MAIN */
 
@@ -86,6 +88,7 @@ body{
 }
 /* FIM MAIN */
 
+
 /* INICIO SOBRE/ABOUT*/
 .about{
     background-color: #FFFFFF;
@@ -114,8 +117,8 @@ body{
     font-size: 32px;
     margin-bottom: 14px;
 }
-
 /* FIM SOBRE/ABOUT */
+
 
 /* INICIO PROJECTS */
 .projects{
@@ -169,5 +172,26 @@ body{
     margin-top: 18px;
     cursor: pointer;
 }
-
 /* FIM PROJECTS */
+
+
+/* ICINIO RODAPE/FOOTER */
+footer{
+    width: 100%;
+    background-color: #181818;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFFFF ;
+}
+
+footer p{
+    margin-left: 12px;
+}
+/* FIM RODAPE/FOOTER */
