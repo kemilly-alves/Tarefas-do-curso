@@ -17,6 +17,9 @@ body{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 .nav-list{
@@ -82,3 +85,35 @@ body{
     color: #181818;
 }
 /* FIM MAIN */
+
+/* INICIO SOBRE/ABOUT*/
+.about{
+    background-color: #FFFFFF;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about div{
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.about img{
+    max-width: 450%;
+    border-radius: 8px;
+}
+
+.about div h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+/* FIM SOBRE/ABOUT */
+
